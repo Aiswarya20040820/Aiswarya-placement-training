@@ -1,0 +1,62 @@
+class Shape{
+    public double area(){
+     return 0;   
+    }
+}
+class rectangle extends Shape{
+    private double length;
+    private double width;
+    public rectangle(double length,double width){
+        this.length=length;
+        this.width=width;
+    }
+    
+    public double area(){
+        return length*width;
+    
+    }
+}
+class circle extends Shape{
+    private final double radius;
+    private final double PI=3.14;
+    public circle(double radius){
+        this.radius=radius;
+    }
+    public double area(){
+        return PI*radius*radius;
+    }
+}
+class triangle extends Shape{
+    private double base;
+    private double height;
+    public triangle(double base,double height){
+        this.base=base;
+        this.height=height;
+    }
+    public double area(){
+        return 0.5*base*height;
+    }
+}
+class square extends Shape{
+    private double side;
+    public square(double side){
+        this.side=side;
+    }
+    public double area(){
+        return side *side;
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    Shape r=new rectangle(4,6);
+	    Shape c=new circle(3);
+	    Shape t=new triangle(4,5);
+	    Shape s=new square(5);
+	    System.out.println("area of rectangle " + r.area());
+	    System.out.println("area of circle "+ c.area());
+	    System.out.println("area of triangle "+ t.area());
+	    System.out.println("area of square "+ s.area());
+	    
+	}
+}
