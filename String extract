@@ -1,0 +1,32 @@
+PROGRAM 1 STRING EXTRACT
+
+public class Main
+{
+	public static void main(String[] args) {
+	    StringBuffer sb=new StringBuffer("AishwaryaBalan");
+	    String substring=sb.substring(7,12);
+
+		System.out.println(substring);
+	}
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    StringBuilder sb=new StringBuilder("AishwaryaBalan");
+	    String substring=sb.substring(7,12);
+
+		System.out.println(substring);
+	}
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    String sb="AishwaryaBalan";
+	    String substring=sb.substring(7,12);
+
+		System.out.println(substring);
+	}
+}
